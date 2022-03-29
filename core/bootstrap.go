@@ -5,10 +5,9 @@
 package core
 
 import (
-	"go-rainbow/drives/db"
-	"go-rainbow/drives/etcd"
-	"go-rainbow/drives/redis"
-     //"gitee.com/vinzhang1115/go-rainbow"
+	"github.com/Vin1115/go-rainbow/drives/db"
+	"github.com/Vin1115/go-rainbow/drives/etcd"
+	"github.com/Vin1115/go-rainbow/drives/redis"
 )
 
 func (r *Rainbow) bootstrap(configPath, runtimePath string) {
