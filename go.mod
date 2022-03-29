@@ -1,4 +1,4 @@
-module go-rainbow
+module github.com/Vin1115/go-rainbow
 
 go 1.17
 
