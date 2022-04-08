@@ -6,6 +6,7 @@ import (
 	"github.com/spf13/viper"
 	"path/filepath"
 	"strings"
+	"fmt"
 )
 
 type routeCfg struct {
@@ -66,7 +67,8 @@ func (r *Rainbow) bootConfig(fileType string) {
 	r.unmarshalConfig()
 
 	//test
-	r.Log(InfoLevel,"testconfig",r.cfg)
+// 	r.Log(InfoLevel,"testconfig",r.cfg)
+	fmt.Println(r.cfg)
 	//监视路由配置文件routes.yml的改动，改动则做出动作sendRoutes
 	viper.WatchConfig()
 	viper.OnConfigChange(func(e fsnotify.Event) {
