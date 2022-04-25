@@ -6,7 +6,6 @@ import (
 	"github.com/spf13/viper"
 	"path/filepath"
 	"strings"
-	"fmt"
 )
 
 type routeCfg struct {
